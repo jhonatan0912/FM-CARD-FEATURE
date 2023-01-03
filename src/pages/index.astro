@@ -1,3 +1,8 @@
+---
+import Header from "../components/Header.astro";
+import Main from "../components/Main.astro";
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -5,8 +10,22 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<style>
+			:root {
+				--Red: hsl(0, 78%, 62%);
+				--Cyan: hsl(180, 62%, 55%);
+				--Orange: hsl(34, 97%, 64%);
+				--Blue: hsl(212, 86%, 64%);
+				--Very-Dark-Blue: hsl(234, 12%, 34%);
+				--Grayish-Blue: hsl(229, 6%, 66%);
+				--Very-Light-Gray: hsl(0, 0%, 98%);
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="my-14">
+			<Header />
+			<Main />
+		</div>
 	</body>
 </html>
